@@ -29,10 +29,17 @@ let increaseInterval = 10;
 
 let gameOver = false;
 
-let hunger = 100;
-let energy = 100;
-let power = 0;
-
+// let hunger = 100;
+// let energy = 100;
+// let power = 0;
+let hunger = document.getElementById("hunger").value;
+let energy = document.getElementById("energy").value;
+let power = document.getElementById("power").value;
+let phases = document.querySelectorAll("#phases").img;
+// let phase1 = document.getElementById('monster1').img;
+// let phase2 = document.getElementById('monster2').img;
+// let phase3 = document.getElementById('monster3').img;
+// let phase4 = document.getElementById('monster4').img;
 // let hungerAlert = false;
 // let energyAlert = false;
 
@@ -42,11 +49,36 @@ let power = 0;
 document.getElementById('eatButton').onclick = incrHunger;
 document.getElementById('sleepButton').onclick = incrEnergy;
 
-document.getElementById("hunger").value = hunger;
-document.getElementById("energy").value = energy;
-document.getElementById("power").value = power;
+// document.getElementById("hunger").value = hunger;
+// document.getElementById("energy").value = energy;
+// document.getElementById("power").value = power;
 
 // // MONSTER IMAGES   
+
+function monsterPhases(power){
+    if(power < 25){
+        phase1[0].children[0].style.display = "block"
+        phase1[0].children[1].style.display = "none"
+        phase1[0].children[2].style.display = "none"
+        phase1[0].children[3].style.display = "none"
+    } else if(power >= 25 && power < 50){
+        phase1[0].children[0].style.display = "none"
+        phase1[0].children[1].style.display = "none"
+        phase1[0].children[2].style.display = "block"
+        phase1[0].children[3].style.display = "none"
+    }else if(power >= 50 && power < 75){
+        phase1[0].children[0].style.display = "none"
+        phase1[0].children[1].style.display = "none"
+        phase1[0].children[2].style.display = "block"
+        phase1[0].children[3].style.display = "none"
+    } else {
+        phase1[0].children[0].style.display = "none"
+        phase1[0].children[1].style.display = "none"
+        phase1[0].children[2].style.display = "none"
+        phase1[0].children[3].style.display = "block"
+    }
+    console.log(monsterPhases)
+}
 
 // // // empty image array for warrior monster images
 // let i = 1;
@@ -110,17 +142,18 @@ document.getElementById("power").value = power;
         document.getElementById("power").value = power;
         console.log(power)
         }
-        if(power > 5)
-        clearInterval(monsterPhase1)
     }
 
-    function gameovercheck(){
-        if(hunger == 0 || energy == 0){
-            alert("GAME OVER");
-            gameover= true;
 
+    function gameovercheck(){
+        if(hunger == 0 || energy == 0 && gameOver == true ){
+            alert("GAME OVER");
+            gameOver= true;
+            alert("Let's head back to the home screen so you can give it another shot")
+            window.location.href = "/Users/erinkates/Desktop/sei-dahlia/projects/Tamagatchi-Mini-Project-Warrior-Builder/startpage.html";
         }
-        else{
+        else if(power == 100){
+            alert("YOU DID IT");
         }
     }
 
@@ -143,6 +176,8 @@ function incrEnergy(){
        energy+=0;
     }
 }
+
+// MONSTER PHASES
 
 
 // DECREASE INTERVALS FUNCTIONS && ALERTS

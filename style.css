@@ -39,10 +39,11 @@
 	font-size: 32px;
 	font-weight: 500;
 	border-radius: 30px;
-	align-items: center;
-	justify-content: center;
 	font-family:'Kontemporary' ;
 	color:gold ;
+	position: fixed;
+    bottom: 11%;
+    right: 72%;
 }
 
 #instructionbtn {
@@ -55,10 +56,13 @@
 	font-size: 32px;
 	font-weight: 500;
 	border-radius: 30px;
-	align-items: center;
+	align-items:baseline;
 	justify-content: center;
 	font-family:'Kontemporary' ;
 	color:gold ;
+	position: fixed;
+    bottom: 11%;
+    left: 72%;
 }
 
 .popup {
@@ -88,6 +92,14 @@
 	margin-top: 10px;
 }
 
+#monster1, #monster2, #monster3, #monster4 {
+	visibility: hidden;
+	top: 50%;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	;
+}
 
 #canvas, #canvas1 {
 	background-image: url('assets/parallax_forest_pack web/layers/parallax-forest-back-trees.png');
@@ -124,14 +136,31 @@
 	text-align: center;
 }
 
-#layer1, #layer2, #layer3, #layer4 {
-	display: none;
-}
 
 
 
 
+#music {
+    background-color: gold;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 5%;
+    left: 35%;
+	right: 65%;
+} 
 
+#music1 {
+    background-color: gold;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 5%;
+    left: 15%;
+	right: 85%;
+} 
 
 
 

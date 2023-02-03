@@ -18,14 +18,14 @@
 
 <div id="metrics">
 <div id="HungerBar">
-    <p> Hunger:	<progress id="hunger" min="0" max="100" value="0"></progress></p>
+    <p> Hunger:	<progress id="hunger" min="0" max="100" value="100">100%</progress></p>
 </div>
 <div id="EnergyBar">
-    <p> Energy:	<progress id="energy" min="0" max="100" value="0"></progress></p>
+    <p> Energy:	<progress id="energy" min="0" max="100" value="100">100%</progress></p>
 </div>
     
     <div id="PowerBar">
-    <p> Power:	<progress id="power" min="0" max="100" value="0"></progress></p>
+    <p> Power:	<progress id="power" min="0" max="100" value="0">0%</progress></p>
     </div>
 
 <div id = "buttons">
@@ -34,12 +34,19 @@
 	<input id="sleepButton" type="Button" value="SLEEP">
 
 </div>
+
+</div>
+<div id ='phases'>
+<img id ="monster1" src = 'assets/Monster Warrior 1/walk03.png'>
+<img id ="monster2" src = 'assets/Monster Warrior 2/fly01.png'>
+<img id ="monster3" src = 'assets/Monster Warrior 3/idle06.png'>
+<img id ="monster4" src = 'assets/Monster Warrior 4/walk04.png'>
 </div>
 
-<img id ="layer1" src = 'assets/parallax_forest_pack web/layers/parallax-forest-back-trees.png'>
-<img id ="layer2" src = 'assets/parallax_forest_pack web/layers/parallax-forest-front-trees.png'>
-<img id ="layer3" src = 'assets/parallax_forest_pack web/layers/parallax-forest-lights.png'>
-<img id ="layer4" src = 'assets/parallax_forest_pack web/layers/parallax-forest-middle-trees.png'>
+<audio id="music1" autoplay controls loop>
+    <source src="assets/Dystopian.wav" type="audio/wav"> 
+</audio> 
+
 
     <script src="app.js"></script>
 </body>
