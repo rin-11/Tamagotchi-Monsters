@@ -19,6 +19,27 @@ window.addEventListener('load', function(){
     canvas.height = 500;
 
   
+// add name
+// function nameMonster()
+// {
+
+// let n = document.getElementById('monstername').text
+
+// document.getElementById('nameMonster').innerHTML = n;
+
+// }
+
+// function testJS(e) {
+//     e.preventDefault();
+//     var b = document.getElementById('name').value,
+//         url = 'http://path_to_next_location/next.html?name=' + encodeURIComponent(b);
+
+//     document.location.href = url;
+// }
+
+
+
+
 // DEFINE VARIABlES
 let decreaseHunger = setInterval(hungerStat, 500);
 let decreaseEnergy = setInterval(energyStat, 500);

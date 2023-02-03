@@ -92,6 +92,25 @@
 	margin-top: 10px;
 }
 
+#monstername {
+	text-shadow: 2px 2px 2px brown;
+	box-sizing: border-box;
+	font-weight: lighter;
+	text-align: center;
+	font-family: 'Kontemporary';
+	color: bisque;
+	border-color: bisque;
+	background-color: rgb(220, 127, 14);
+	padding: 12px 20px;
+	margin: 8px 8px;
+	font-size: 20px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 20%;
+	right: 70%;
+	
+}
+
 #monster1 {
 	display: none;
 	position: fixed;
@@ -148,9 +167,9 @@
 	text-align: center;
 	justify-content: center;
 	font-size: 30px;;
-	font-family: 'Western';
+	font-family: 'Kontemporary';
 	position: fixed;
-    bottom: 3%;
+    bottom: 50%;
 	left: 50%;
 }
 
