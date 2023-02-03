@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Monster Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id ='canvas1'></canvas>
+
+<div class="header">
+    <h1>Warrior Monster Tamagotchi</h1>
+</div>
+
+<button id="start" onclick="window.location.href='index.html';"">Start Game</button>
+
+<div class="instructions">
+    <button id="instructionbtn" onclick="openPopup()">How To Play</button>
+    <div class="popup" id="popup">
+    <h2>A new baby monster was born. Make sure the monster gets plenty of food and sleep so he can reach his full potential. Click the feed and sleep buttons below. As long as the progress bars stay above 50% the monster will get more power.</h2>
+    <button id="closeinstructionbtn" onclick="closePopup()">Back to Game</button>
+</div>
+</div>
+
+    <script src="app.js"></script>
+    <script src="startgame.js"></script>
+</body>
+</html>

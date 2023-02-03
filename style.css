@@ -89,15 +89,15 @@
 }
 
 
-#canvas {
+#canvas, #canvas1 {
 	background-image: url('assets/parallax_forest_pack web/layers/parallax-forest-back-trees.png');
 	border: 5px solid gold;
     position: absolute;
-    top: 42%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 75%;
-    max-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #metrics {
@@ -124,6 +124,9 @@
 	text-align: center;
 }
 
+#layer1, #layer2, #layer3, #layer4 {
+	display: none;
+}
 
 
 
