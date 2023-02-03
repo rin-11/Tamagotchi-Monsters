@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warrior Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
-    
 <canvas></canvas>
 
 
+<div id = "buttons">
+    
+    <button id="eatButton">Eat</button>
+    <progress id="hunger" value="100" min="100"></progress>
 
 
+    <button id="sleepButton">Sleep</button>
+    <progress id="energy" value="100" min="100"></progress>
 
 
+    <button id="trainButton">Train</button>
+    <progress id="power" value="0" max="100"></progress>
+
+</div>
 
 
-
-    <script  src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
