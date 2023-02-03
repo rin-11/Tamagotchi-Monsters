@@ -29,13 +29,6 @@ window.addEventListener('load', function(){
 
 // }
 
-// function testJS(e) {
-//     e.preventDefault();
-//     var b = document.getElementById('name').value,
-//         url = 'http://path_to_next_location/next.html?name=' + encodeURIComponent(b);
-
-//     document.location.href = url;
-// }
 
 
 
