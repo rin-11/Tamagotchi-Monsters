@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Kontemporary';
-    src: url("/Users/erinkates/Desktop/sei-dahlia/projects/Tamagatchi-Mini-Project-Warrior-Builder/assets/Kontemporary.ttf")
+    src: url("assets/Kontemporary.ttf")
 }
 * {
 	margin: 0;
@@ -92,14 +92,45 @@
 	margin-top: 10px;
 }
 
-#monster1, #monster2, #monster3, #monster4 {
-	visibility: hidden;
-	top: 50%;
-	bottom: 50%;
-	left: 50%;
-	right: 50%;
-	;
+#monster1 {
+	display: none;
+	position: fixed;
+	width: 200px;
+	height: 200px;
+	justify-content: center;
+	right: 60%;
+	top: 40%;
 }
+#monster2 {
+	display: none;
+	position: fixed;
+	width: 250px;
+	height: 250px;
+	justify-content: center;
+	right: 60%;
+	top: 40%;
+}
+#monster3 {
+	display: none;
+	position: fixed;
+	width: 300px;
+	height: 400px;
+	justify-content: center;
+	right: 60%;
+	top: 20%;
+}
+#monster4 {
+	display: none;
+	position: fixed;
+	width: 270px;
+	height: 300px;
+	justify-content: center;
+	right: 60%;
+	top: 40%;
+}
+
+
+
 
 #canvas, #canvas1 {
 	background-image: url('assets/parallax_forest_pack web/layers/parallax-forest-back-trees.png');
@@ -131,7 +162,7 @@
 	font-size: 28px;
 	font-weight: 500;
 	border-radius: 30px;
-	font-family:'Kontemporary' ;
+	font-family:'Kontemporary';
 	color:gold ;
 	text-align: center;
 }

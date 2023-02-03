@@ -69,7 +69,7 @@ setInterval(function(){
 
     // draw images 
     context.drawImage(warrior1images[i], 100, 100, 250, 250); // (x, y, width, height)
-    context.drawImage(warrior2images[i], 350, 120, 200, 200); // (x, y, width, height)
+    context.drawImage(warrior2images[i], 350, 150, 200, 200); // (x, y, width, height)
     context.drawImage(warrior3images[i], 550, 40, 400, 400); // (x, y, width, height)
     context.drawImage(warrior4images[i], 850, 50, 400, 400); // (x, y, width, height)
 }, 100) //draw image every 100 milliseconds
