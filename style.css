@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: 'Kontemporary';
     src: url("assets/Kontemporary.ttf")
 }
+
+
 * {
 	margin: 0;
     padding: 0;
@@ -76,8 +79,8 @@
 	text-align: center;
 	padding: 0 30px 30px;
 	color:floralwhite ;
+	font-family: 'Bebas Neue', sans-serif;
 	font-size: 20px;
-	font-family:'Kontemporary' ;
 	font-weight: lighter;
 	visibility: hidden;
 	transition: transform 0.4s, top 0.4s;
