@@ -42,7 +42,7 @@
 	font-size: 32px;
 	font-weight: 500;
 	border-radius: 30px;
-	font-family:'Kontemporary' ;
+	font-family: 'Bebas Neue', sans-serif;
 	color:gold ;
 	position: fixed;
     bottom: 11%;
@@ -61,11 +61,11 @@
 	border-radius: 30px;
 	align-items:baseline;
 	justify-content: center;
-	font-family:'Kontemporary' ;
 	color:gold ;
 	position: fixed;
     bottom: 11%;
     left: 72%;
+	font-family: 'Bebas Neue', sans-serif;
 }
 
 .popup {
@@ -95,24 +95,6 @@
 	margin-top: 10px;
 }
 
-#monstername {
-	text-shadow: 2px 2px 2px brown;
-	box-sizing: border-box;
-	font-weight: lighter;
-	text-align: center;
-	font-family: 'Kontemporary';
-	color: bisque;
-	border-color: bisque;
-	background-color: rgb(220, 127, 14);
-	padding: 12px 20px;
-	margin: 8px 8px;
-	font-size: 20px;
-	box-sizing: border-box;
-	position: fixed;
-	top: 20%;
-	right: 70%;
-	
-}
 
 #monster1 {
 	display: none;
@@ -184,7 +166,7 @@
 	font-size: 28px;
 	font-weight: 500;
 	border-radius: 30px;
-	font-family:'Kontemporary';
+	font-family: 'Bebas Neue', sans-serif;
 	color:gold ;
 	text-align: center;
 }
