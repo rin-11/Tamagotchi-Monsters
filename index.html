@@ -4,52 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warrior Builder</title>
+    <title>Warrior Monster Tamagotchi</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<canvas id ='canvas'></canvas>
+
+    <canvas id ='canvas1'></canvas>
 
 <div class="header">
     <h1>Warrior Monster Tamagotchi</h1>
 </div>
 
-
-<div id="metrics">
-   
-<div id="HungerBar">
-    <p> Hunger:	<progress id="hunger" min="0" max="100" value="100">100%</progress></p>
+<button id="start" onclick="window.location.href='index2.html';">Start Game</button>
 </div>
-<div id="EnergyBar">
-    <p> Energy:	<progress id="energy" min="0" max="100" value="100">100%</progress></p>
+<div class="instructions">
+    <button id="instructionbtn" onclick="openPopup()">How To Play</button>
+    <div class="popup" id="popup">
+    <h2>A new baby monster was born. Make sure the monster gets plenty of food and sleep. As long as the progress bars stay above 50% the monster will get more power. Every time your monster powers up it will evolve . Go ahead and click Start Game to get started.</h2>
+    <button id="closeinstructionbtn" onclick="closePopup()">Back to Game</button>
 </div>
-    
-    <div id="PowerBar">
-    <p> Power:	<progress id="power" min="0" max="100" value="0">0%</progress></p>
-    </div>
-
-<div id = "buttons">
-    
-    <input id="eatButton" type="Button" value="FEED">
-	<input id="sleepButton" type="Button" value="SLEEP">
-
 </div>
 
-</div>
-<div id ='phases'>
-<img id ="monster1" src = 'assets/Monster Warrior 1/walk03.png'>
-<img id ="monster2" src = 'assets/Monster Warrior 2/fly01.png'>
-<img id ="monster3" src = 'assets/Monster Warrior 3/idle06.png'>
-<img id ="monster4" src = 'assets/Monster Warrior 4/walk04.png'>
-</div>
-
-<audio id="music1" autoplay controls loop>
+<audio id="music" autoplay controls loop>
     <source src="assets/Dystopian.wav" type="audio/wav"> 
 </audio> 
 
-
     <script src="app.js"></script>
+    <script src="startgame.js"></script>
 </body>
 </html>

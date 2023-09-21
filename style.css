@@ -69,9 +69,9 @@
 }
 
 .popup {
-	width: 400px;
-	background-color: coral;
-	border-radius: 6px;
+	width: 700px;
+	background-color: rgb(139, 94, 45);
+	border-radius: 5px;
 	position: absolute;
 	top: 40%;
 	left: 50%;
@@ -80,7 +80,7 @@
 	padding: 0 30px 30px;
 	color:floralwhite ;
 	font-family: 'Bebas Neue', sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: lighter;
 	visibility: hidden;
 	transition: transform 0.4s, top 0.4s;
