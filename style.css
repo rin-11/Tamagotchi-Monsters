@@ -85,6 +85,15 @@
 	visibility: hidden;
 	transition: transform 0.4s, top 0.4s;
 }
+.homescreen button {
+	position: absolute;
+	top: 13%;
+	align-items: center;
+	justify-content: center;
+	left: 35%;
+	width: 400px;
+	max-height: fit-content;
+}
 
 .open-popup{
 	visibility: visible;
@@ -196,6 +205,7 @@
     left: 15%;
 	right: 85%;
 } 
+
 
 
 

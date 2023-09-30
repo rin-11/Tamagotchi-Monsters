@@ -73,13 +73,10 @@ function powerStat(){
         if(hunger == 0 || energy == 0 && gameOver == true ){
             alert("GAME OVER");
             gameOver= true;
-            alert("Let's head back to the home screen so you can give it another shot")
-            window.location.href = "/Users/erinkates/Desktop/sei-dahlia/projects/Tamagatchi-Mini-Project-Warrior-Builder/index.html";
         }
         else if(power == 100){
             alert("YOU DID IT");
-            alert("Let's head back to the home screen so you can give it another shot and see if you can beat your time!")
-            window.location.href = "/Users/erinkates/Desktop/sei-dahlia/projects/Tamagatchi-Mini-Project-Warrior-Builder/index.html";
+            window.location.href = "index.html";
         }
     }
 
